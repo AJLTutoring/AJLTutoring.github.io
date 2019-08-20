@@ -1,0 +1,228 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/38446c4a21.js"></script>
+    <style>
+
+        #wrap {
+            width: 100%;
+        }
+
+        .scene {
+            width: 90px;
+            height: 50px;
+            vertical-align: top;
+            display: inline-block;
+        }
+
+
+        .box {
+            width: 105%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: all 0.5s ease-out;
+            transform-origin: 0 0;
+        }
+
+        .stillbox {
+            width: 105%;
+            height: 100%;
+            transform-style: preserve-3d;
+        }
+
+        .stillbox2 {
+            width: 150%;
+            height: 100%;
+            transform-style: preserve-3d;
+        }
+
+        body {
+            background-color: #444444;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .logo {
+            float: left;
+        }
+
+        .scene:hover .box {
+            transform: rotateX(90deg);
+            cursor: pointer;
+        }
+
+        .face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transform-origin: 0 0;
+        }
+
+        .front {
+            transform: rotateX(0deg);
+            background-color: white;
+        }
+
+        .activefront {
+            transform: rotateX(0deg);
+            background-color: #D3D3D3;
+        }
+
+        .up {
+            transform: rotateX(-90deg);
+            background-color: black;
+            color: white;
+            font-size: 0.8rem;
+        }
+
+        .para {
+            font-weight: bold;
+            text-align: center;
+            line-height: 4em;
+        }
+
+        .para2 {
+            font-weight: bold;
+            text-align: center;
+            line-height: 4em;
+            font-size: smaller;
+        }
+
+        .fas, .fa-home {
+            font-size: 30px;
+            line-height: 1.7em;
+            color: #444444;
+            position: absolute;
+            margin-left: 30px;
+        }
+
+        .far, .fa-info-circle {
+            font-size: 30px;
+            line-height: 1.7em;
+            color: #444444;
+            position: absolute;
+            margin-left: 32.5px;
+        }
+
+        .fa-address-card {
+            font-size: 30px;
+            line-height: 1.7em;
+            color: #444444;
+            position: absolute;
+            margin-left: 31px;
+        }
+
+        .fa-chalkboard-teacher {
+            font-size: 30px;
+            line-height: 1.7em;
+            color: #444444;
+            position: absolute;
+            margin-left: 32.5px;
+        }
+
+        #div1 {
+            background: white;
+            width: 500px;
+        }
+
+        #div2 {
+            background: white;
+        }
+
+        #wrap {
+            display: table;
+            width: 100%;
+        }
+
+        #div1,
+        #div2,
+        .scene,
+        .front,
+        .face,
+        .logo,
+        .up,
+        .face {
+            vertical-align: top;
+            display: table-cell;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="scene">
+            <div class="box">
+                <div class="front face logo">
+                    <img src="https://i.imgur.com/1VPtPxA.png" style="width:50px;height:50px;margin-left: 20px;">
+                </div>
+                <a href="https://adamjliang.github.io/home.html">
+                    <div class="up face">
+                        <p class="para2">ADAM J. LIANG</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div id="div1"></div>
+
+        <div class="scene">
+            <div class="box">
+                <div class="activefront face">
+                    <i class="fas fa-home"></i>
+                </div>
+                <a href="https://adamjliang.github.io/home.html">
+                    <div class="up face">
+                        <p class="para">HOME</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="scene">
+            <div class="box">
+                <div class="front face">
+                    <i class="fas fa-info-circle"></i>
+                </div>
+                <a href="https://adamjliang.github.io/about.html">
+                    <div class="up face">
+                        <p class="para">ABOUT</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="scene">
+            <div class="box">
+                <div class="front face">
+                    <i class="fas fa-address-card"></i>
+                </div>
+                <a href="https://adamjliang.github.io/resume.html">
+                    <div class="up face">
+                        <p class="para">RESUME</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="scene">
+            <div class="box">
+                <div class="front face">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                </div>
+                <a href="https://adamjliang.github.io/tutoring.html">
+                    <div class="up face">
+                        <p class="para">TUTORING</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div id="div2"></div>
+
+    </div>
+
+
+    <center><h1>HOME</h1></center>
+
+</body>
+</html>
