@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en" class="animated wobble">
+<html lang="en" class="animated fadeInUp">
 <head>
     <title>AJLTutoring - Contact</title>
     <script src="https://kit.fontawesome.com/38446c4a21.js"></script>
@@ -177,10 +177,31 @@
             color:white;
         }
 
-            .specialdiv:hover {
+        .specialdiv:hover {
                 width: 559px;
                 color: black;
-            }
+        }
+
+
+        .maize:hover {
+            color: #e4a010;
+        }
+
+        .blue:hover {
+            color: blue;
+            text-size-adjust:150%;
+        }
+
+        .zoom {
+            transition: transform .2s; /* Animation */
+        }
+
+        .zoom:hover {
+            transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+        }
+
+
+
     </style>
 </head>
 <body>
@@ -253,8 +274,16 @@
 
     </div>
 
-
-
-
+    <div class="zoom">
+        <center><h1>Phone: 732-524-7085 (Preferred Method)</h1></center>
+    </div>
+    <br />
+    <div class="zoom">
+        <center><h1>Personal Email: <a class="maize" href="mailto:Ajliang7@gmail.com?Subject=Tutoring%20Inquiry" target="_top">Ajliang7@gmail.com</a></h1></center>
+    </div>
+    <br />
+    <div class="zoom">
+        <center><h1>Umich Email: <a class="blue" href="mailto:Ajliang@umich.edu?Subject=Tutoring%20Inquiry" target="_top">Ajliang@umich.edu</a></h1></center>
+    </div>
 </body>
 </html>

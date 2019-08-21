@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+.circle{
+	width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    animation: wave 1.5s ease infinite;
+}
+
+.c1 {animation-delay: 0;}
+.c2 {animation-delay: 100ms;}
+.c3 {animation-delay: 200ms;}
+.c4 {animation-delay: 300ms;}
+
+@keyframes wave{
+	0%, 60%, 100% {
+		transform: initial;
+        background-color: #1ee3cf;
+        }
+        
+        30% {
+        transform: translateY(-15px);
+        background-color: #6b48ff;
+        }
+}
+</style>
+</head>
+<body>
+<span class="circle c1"></span>
+<span class="circle c2"></span>
+<span class="circle c3"></span>
+<span class="circle c4"></span>
+<p>gf</p>
+</body>
+</html>
