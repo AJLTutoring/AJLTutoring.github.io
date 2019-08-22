@@ -1,37 +1,386 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en" class="animated bounce">
 <head>
-<style>
-.circle{
-	width: 15px;
-    height: 15px;
-    border-radius: 50px;
-    animation: wave 1.5s ease infinite;
-}
+    <title>AJLTutoring - Home</title>
+    <script src="https://kit.fontawesome.com/38446c4a21.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="https://i.imgur.com/1VPtPxA.png" />
+    <link rel="stylesheet" href="animate.css" />
+    <style>
 
-.c1 {animation-delay: 0;}
-.c2 {animation-delay: 100ms;}
-.c3 {animation-delay: 200ms;}
-.c4 {animation-delay: 300ms;}
 
-@keyframes wave{
-	0%, 60%, 100% {
-		transform: initial;
-        background-color: #1ee3cf;
+
+
+        #preloader {
         }
-        
-        30% {
-        transform: translateY(-15px);
-        background-color: #6b48ff;
+
+        #loader {
+            position: absolute;
+            left: 50%;
+            top: 90%;
+            z-index: 1;
+            width: 150px;
+            height: 150px;
+            margin: -75px 0 0 -75px;
+            border: 16px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 16px solid #3498db;
+            width: 120px;
+            height: 120px;
+            -webkit-animation: spin 2s linear infinite;
+            animation: spin 2s linear infinite;
         }
-}
-</style>
+
+
+        #wrap {
+            width: 100%;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        h2, h3 {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .scene {
+            width: 90px;
+            height: 50px;
+            vertical-align: top;
+            display: inline-block;
+        }
+
+
+        .box {
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: all 0.5s ease-out;
+            transform-origin: 0 0;
+        }
+
+        .stillbox {
+            width: 105%;
+            height: 100%;
+            transform-style: preserve-3d;
+        }
+
+        .stillbox2 {
+            width: 150%;
+            height: 100%;
+            transform-style: preserve-3d;
+        }
+
+        body {
+            background-color: #444444;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .logo {
+            float: left;
+        }
+
+        .scene:hover .box {
+            transform: rotateX(90deg);
+            cursor: pointer;
+        }
+
+        .face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transform-origin: 0 0;
+        }
+
+        .front {
+            transform: rotateX(0deg);
+            background-color: white;
+        }
+
+        .activefront {
+            transform: rotateX(0deg);
+            background-color: #D3D3D3;
+        }
+
+        .up {
+            transform: rotateX(-90deg);
+            background-color: black;
+            color: white;
+            font-size: 0.8rem;
+        }
+
+        .para {
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            text-align: center;
+            line-height: 4em;
+        }
+
+        .para2 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            text-align: center;
+            line-height: 4em;
+            font-size: smaller;
+        }
+
+        .fas, .fa-home {
+            font-size: 30px;
+            line-height: 1.7em;
+            color: #444444;
+            position: absolute;
+            margin-left: 30px;
+        }
+
+        .fa-info {
+            font-size: 30px;
+            line-height: 1.6em;
+            color: #444444;
+            position: absolute;
+            margin-left: 42.5px;
+        }
+
+        .fa-quote-right {
+            font-size: 30px;
+            line-height: 1.75em;
+            color: #444444;
+            position: absolute;
+            margin-left: 28px;
+        }
+
+        .fa-phone-alt {
+            font-size: 30px;
+            line-height: 1.7em;
+            color: #444444;
+            position: absolute;
+            margin-left: 27.5px;
+        }
+
+        #div1 {
+            background: white;
+            width: 500px;
+        }
+
+        #div2 {
+            background: white;
+        }
+
+        #wrap {
+            display: table;
+            width: 100%;
+        }
+
+        #div1,
+        #div2,
+        .scene,
+        .front,
+        .face,
+        .logo,
+        .up,
+        .face {
+            vertical-align: top;
+            display: table-cell;
+            height: 50px;
+        }
+
+        .specialdiv {
+            text-align: center;
+            line-height: 3em;
+            overflow: hidden;
+            width: 23px;
+            height: 50px;
+            background: black;
+            -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+            transition: width 2s;
+            margin-left: 31.2%;
+            color: white;
+        }
+
+            .specialdiv:hover {
+                width: 559px;
+                color: black;
+            }
+
+
+
+
+
+        @-webkit-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Add animation to "page content" */
+
+        #cf {
+            position: relative;
+            height: 300px;
+            width: 600px;
+            margin: 0 auto;
+        }
+
+            #cf img, #cf video {
+                position: absolute;
+                left: 0;
+                -webkit-transition: opacity 1s ease-in-out;
+                -moz-transition: opacity 1s ease-in-out;
+                -o-transition: opacity 1s ease-in-out;
+                transition: opacity 1s ease-in-out;
+            }
+
+                #cf video.top:hover {
+                    opacity: 0;
+                }
+    </style>
 </head>
-<body>
-<span class="circle c1"></span>
-<span class="circle c2"></span>
-<span class="circle c3"></span>
-<span class="circle c4"></span>
-<p>gf</p>
+<body onload="myFunction()">
+    <div id="preloader">
+        <br /><br /><br /><br /><br /><br /><center><h1>AJLTutoring<font color="#444444">. . </font></h1></center><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    </div>
+    <div id="loader"></div>
+
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+        <div id="wrap">
+            <div class="scene">
+                <div class="box">
+                    <div class="front face logo">
+                        <img src="https://i.imgur.com/1VPtPxA.png" style="width:50px;height:50px;margin-left: 5px;">
+                    </div>
+                    <a href="https://ajltutoring.github.io/home.html">
+                        <div class="up face">
+                            <p class="para2">ADAM J. LIANG</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div id="div1"></div>
+            <div id="div2"></div>
+            <div class="scene">
+                <div class="box">
+                    <div class="activefront face">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <a href="https://ajltutoring.github.io/home.html">
+                        <div class="up face">
+                            <p class="para">HOME</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="scene">
+                <div class="box">
+                    <div class="front face">
+                        <i class="fas fa-info"></i>
+                    </div>
+                    <a href="https://ajltutoring.github.io/info.html">
+                        <div class="up face">
+                            <p class="para">INFO</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="scene">
+                <div class="box">
+                    <div class="front face">
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                    <a href="https://ajltutoring.github.io/reviews.html">
+                        <div class="up face">
+                            <p class="para">REVIEWS</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="scene">
+                <div class="box">
+                    <div class="front face">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <a href="https://ajltutoring.github.io/contact.html">
+                        <div class="up face">
+                            <p class="para">CONTACT</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+        <br />
+        <center><h2><font size="9">AJLTUTORING - PRIVATE PRACTICE</font></h2></center>
+        <center><h3>EECS Tutoring at the University of Michigan - Ann Arbor</h3></center>
+        <br />
+        <div class="w3-container w3-center w3-animate-top">
+            <div class="specialdiv"><b>&nbsp;+</b>&nbsp;<font color="white" face="Roboto"><b>EECS 183</b></font></div>
+            <div class="small">
+                <div id="cf">
+                    <img class="bottom" src="https://i.imgur.com/YC23ZrK.png" width="560" height="300" style="margin-left: 25px;" />
+                    <video class="top" width="600" height="300" autoplay muted>
+                        <source src="https://i.imgur.com/7r8KzpK.mp4" type="video/mp4">
+
+                    </video>
+
+                </div>
+            </div>
+
+        </div>
+        <br>
+
+
+
+
+        <div class="w3-container w3-center w3-animate-bottom">
+            <div class="specialdiv"><b>&nbsp;+</b>&nbsp;<font color="white" face="Roboto"><b>EECS 280</b></font></div>
+            <video width:100% height="300" autoplay muted>
+                <source src="https://i.imgur.com/omN6pxt.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+
+        </div>
+
+    </div>
+
+    <script>
+            var myVar;
+
+            function myFunction() {
+                myVar = setTimeout(showPage, 3000);
+            }
+
+            function showPage() {
+                document.getElementById("preloader").style.display = "none";
+                document.getElementById("loader").style.display = "none";
+                document.getElementById("myDiv").style.display = "block";
+            }
+    </script>
+
+
+
 </body>
 </html>
