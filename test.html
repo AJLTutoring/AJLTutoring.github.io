@@ -1,7 +1,8 @@
 <!DOCTYPE HTML>
-<html lang="en" class="animated bounce">
+<html lang="en">
 <head>
-    <title>AJLTutoring - Home</title>
+    <title>AJLTutoring - Reviews</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/38446c4a21.js"></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
@@ -9,29 +10,49 @@
     <link rel="stylesheet" href="animate.css" />
     <style>
 
-
-
-
-        #preloader {
+        .w4-container, .w3-panel {
+            padding: 0.01em 16px;
+            border: 5px solid blue;
+            border-bottom-color: #F6F6F6;
+            border-right-color: #F6F6F6;
         }
 
-        #loader {
-            position: absolute;
-            left: 50%;
-            top: 90%;
-            z-index: 1;
-            width: 150px;
-            height: 150px;
-            margin: -75px 0 0 -75px;
-            border: 16px solid #f3f3f3;
-            border-radius: 50%;
-            border-top: 16px solid #3498db;
-            width: 120px;
-            height: 120px;
-            -webkit-animation: spin 2s linear infinite;
-            animation: spin 2s linear infinite;
+        .w5-container{
+            padding: 0.01em 16px;
+            border: 5px solid red;
+            /*
+            border-bottom-color: #f2c649; maize
+            border-right-color: #f2c649;
+            */
         }
 
+        .w4-animate-opacity {
+            animation: opac 4s
+        }
+
+        @keyframes opac {
+            from {
+                opacity: 0
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        .w4-animate-zoom {
+            animation: animatezoom 2s
+        }
+
+        @keyframes animatezoom {
+            from {
+                transform: scale(0)
+            }
+
+            to {
+                transform: scale(1)
+            }
+        }
 
         #wrap {
             width: 100%;
@@ -74,7 +95,7 @@
         }
 
         body {
-            background-color: #444444;
+            background-color: #F6F6F6;
         }
 
         * {
@@ -207,179 +228,165 @@
                 color: black;
             }
 
-
-
-
-
-        @-webkit-keyframes spin {
-            0% {
-                -webkit-transform: rotate(0deg);
-            }
-
-            100% {
-                -webkit-transform: rotate(360deg);
-            }
+        .rotateimg180 {
+            -webkit-transform: rotate(180deg);
+            -moz-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+            transform: rotate(180deg);
         }
 
-        @keyframes spin {
-            0% {
-                transform: rotate(0deg);
-            }
-
-            100% {
-                transform: rotate(360deg);
-            }
+        /* Thick red border */
+        hr.blackbar {
+            border: 1px solid black;
+            width: 100%;
         }
-
-        /* Add animation to "page content" */
-
-        #cf {
-            position: relative;
-            height: 300px;
-            width: 600px;
-            margin: 0 auto;
-        }
-
-            #cf img, #cf video {
-                position: absolute;
-                left: 0;
-                -webkit-transition: opacity 1s ease-in-out;
-                -moz-transition: opacity 1s ease-in-out;
-                -o-transition: opacity 1s ease-in-out;
-                transition: opacity 1s ease-in-out;
-            }
-
-                #cf video.top:hover {
-                    opacity: 0;
-                }
     </style>
 </head>
-<body onload="myFunction()">
-    <div id="preloader">
-        <br /><br /><br /><br /><br /><br /><center><h1>AJLTutoring<font color="#444444">. . </font></h1></center><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-    </div>
-    <div id="loader"></div>
-
-    <div style="display:none;" id="myDiv" class="animate-bottom">
-        <div id="wrap">
-            <div class="scene">
-                <div class="box">
+<body>
+    <div id="wrap">
+        <div class="scene">
+            <div class="box">
+                <a href="https://ajltutoring.github.io/home.html">
                     <div class="front face logo">
                         <img src="https://i.imgur.com/1VPtPxA.png" style="width:50px;height:50px;margin-left: 5px;">
                     </div>
-                    <a href="https://ajltutoring.github.io/home.html">
-                        <div class="up face">
-                            <p class="para2">ADAM J. LIANG</p>
-                        </div>
-                    </a>
-                </div>
+                </a>
+                <a href="https://ajltutoring.github.io/home.html">
+                    <div class="up face">
+                        <p class="para2">ADAM J. LIANG</p>
+                    </div>
+                </a>
             </div>
+        </div>
 
-            <div id="div1"></div>
-            <div id="div2"></div>
-            <div class="scene">
-                <div class="box">
-                    <div class="activefront face">
+        <div id="div1"></div>
+        <div id="div2"></div>
+        <div class="scene">
+            <div class="box">
+                <a href="https://ajltutoring.github.io/home.html">
+                    <div class="front face">
                         <i class="fas fa-home"></i>
                     </div>
-                    <a href="https://ajltutoring.github.io/home.html">
-                        <div class="up face">
-                            <p class="para">HOME</p>
-                        </div>
-                    </a>
-                </div>
+                </a>
+                <a href="https://ajltutoring.github.io/home.html">
+                    <div class="up face">
+                        <p class="para">HOME</p>
+                    </div>
+                </a>
             </div>
-            <div class="scene">
-                <div class="box">
+        </div>
+        <div class="scene">
+            <div class="box">
+                <a href="https://ajltutoring.github.io/info.html">
                     <div class="front face">
                         <i class="fas fa-info"></i>
                     </div>
-                    <a href="https://ajltutoring.github.io/info.html">
-                        <div class="up face">
-                            <p class="para">INFO</p>
-                        </div>
-                    </a>
-                </div>
+                </a>
+                <a href="https://ajltutoring.github.io/info.html">
+                    <div class="up face">
+                        <p class="para">INFO</p>
+                    </div>
+                </a>
             </div>
-            <div class="scene">
-                <div class="box">
-                    <div class="front face">
+        </div>
+        <div class="scene">
+            <div class="box">
+                <a href="https://ajltutoring.github.io/reviews.html">
+                    <div class="activefront face">
                         <i class="fas fa-quote-right"></i>
                     </div>
-                    <a href="https://ajltutoring.github.io/reviews.html">
-                        <div class="up face">
-                            <p class="para">REVIEWS</p>
-                        </div>
-                    </a>
-                </div>
+                </a>
+                <a href="https://ajltutoring.github.io/reviews.html">
+                    <div class="up face">
+                        <p class="para">REVIEWS</p>
+                    </div>
+                </a>
             </div>
-            <div class="scene">
-                <div class="box">
+        </div>
+        <div class="scene">
+            <div class="box">
+                <a href="https://ajltutoring.github.io/contact.html">
                     <div class="front face">
                         <i class="fas fa-phone-alt"></i>
                     </div>
-                    <a href="https://ajltutoring.github.io/contact.html">
-                        <div class="up face">
-                            <p class="para">CONTACT</p>
-                        </div>
-                    </a>
-                </div>
+                </a>
+                <a href="https://ajltutoring.github.io/contact.html">
+                    <div class="up face">
+                        <p class="para">CONTACT</p>
+                    </div>
+                </a>
             </div>
-
-
-
         </div>
 
 
-        <br />
-        <center><h2><font size="9">AJLTUTORING - PRIVATE PRACTICE</font></h2></center>
-        <center><h3>EECS Tutoring at the University of Michigan - Ann Arbor</h3></center>
-        <br />
-        <div class="w3-container w3-center w3-animate-top">
-            <div class="specialdiv"><b>&nbsp;+</b>&nbsp;<font color="white" face="Roboto"><b>EECS 183</b></font></div>
-            <div class="small">
-                <div id="cf">
-                    <img class="bottom" src="https://i.imgur.com/YC23ZrK.png" width="560" height="300" style="margin-left: 25px;" />
-                    <video class="top" width="600" height="300" autoplay muted>
-                        <source src="https://i.imgur.com/7r8KzpK.mp4" type="video/mp4">
-
-                    </video>
-
-                </div>
-            </div>
-
-        </div>
-        <br>
-
-
-
-
-        <div class="w3-container w3-center w3-animate-bottom">
-            <div class="specialdiv"><b>&nbsp;+</b>&nbsp;<font color="white" face="Roboto"><b>EECS 280</b></font></div>
-            <video width:100% height="300" autoplay muted>
-                <source src="https://i.imgur.com/omN6pxt.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-
-
-        </div>
 
     </div>
+    <br />
+    <div class="w3-container w4-animate-opacity">
+        <p style="width:70%; background-color: #F6F6F6; font-size:20px; font-family: 'Roboto'" >
+            <img src="Real_Quote.png" alt="Quotation_Thumbnail" style="float:left;width:345px;height:200px; padding-right: 10px;" >
+            Adam is the perfect EECS tutor for students of all levels. What impressed me the most was his ability to cater to my needs as a student, helping on labs, projects, and especially exam prep
+            Adam possesses a unique understanding of programming concepts, and his tutoring services will save you time and boost your grades while also helping your understanding of CS topics.
+            He is a great guy as well, 10/10 highly recommend.<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&thinsp;     <strong>- EECS 183 Student, Fall 2018 Semester</strong>
 
-    <script>
-            var myVar;
 
-            function myFunction() {
-                myVar = setTimeout(showPage, 3000);
-            }
+        </p>
+    </div>
+    <br /><br /><br /><br />
 
-            function showPage() {
-                document.getElementById("preloader").style.display = "none";
-                document.getElementById("loader").style.display = "none";
-                document.getElementById("myDiv").style.display = "block";
-            }
-    </script>
+    <!--<hr class="blackbar">-->
+ 
 
+    <div class="w3-container w4-animate-opacity">
+        <p style=" float: right;width:70%; background-color: #F6F6F6; font-size:20px; font-family: 'Roboto' ">
+            <img class="rotateimg180" src="Real_Quote.png" alt="Quotation_Thumbnail" style="float:right;width:345px;height:200px; padding-left: 10px;">
+            On top of being a great and down to earth guy, Adam can also switch gears and display his EECS knowledge whenever you are in need of help. What makes Adam a great tutor is his ability
+            to fully translate his deep understanding of Computer Science to you through texts and in-person. Through this, Adam not only helps me finish my tasks, but he also makes sure I understand
+            every step along the way. <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&thinsp;     <strong>- EECS 280 Student, Winter 2019 Semester</strong>
+
+
+        </p>
+    </div>
+
+    <br /><br /><br /><br />
+
+
+    <!--<hr class="blackbar">-->
+
+
+    <div class="w3-container w4-animate-opacity">
+        <p style=" float: left;width:70%; background-color: #F6F6F6; font-size:20px; font-family: 'Roboto' ">
+            <img src="Real_Quote.png" alt="Quotation_Thumbnail" style="float:left;width:345px;height:200px; padding-right: 10px;">
+            I decided to take EECS 183 without any prior knowledge of the field, and soon discovered how challenging the class was. A friend of mine put me in touch with Adam and after only a couple of weeks,
+            I was finally able to grasp the material and stop going to office hours.<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&thinsp;     <strong>- EECS 183 Student, Fall 2018 Semester</strong>
+
+
+
+
+        </p>
+    </div>
+
+    <br /><br /><br /><br />
+
+    <!--<hr class="blackbar">-->
+
+
+    <div class="w3-container w4-animate-opacity">
+        <p style=" float: right;width:70%; background-color: #F6F6F6; font-size:20px; font-family: 'Roboto' ">
+            <img class="rotateimg180" src="Real_Quote.png" alt="Quotation_Thumbnail" style="float:right;width:345px;height:200px; padding-left: 10px;">
+            Adam helped me throughout EECS 183. Excellent tutor - was available nearly all the time and was crucial when it came to projects. <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&thinsp;     <strong>- EECS 183 Student, Winter 2019 Semester</strong>
+
+
+        </p>
+    </div>
+    <br /><br /><br /><br />
+
+    <!-- https://i.imgur.com/5amQfgE.jpg -->
 
 
 </body>
