@@ -169,6 +169,7 @@
             height: 50px;
         }
 
+
         .specialdiv {
             text-align: center;
             line-height: 3em;
@@ -224,16 +225,54 @@
             background-color: #F6F6F6;
         }
 
+        .br2 {
+            display: block;
+            margin: 10px 0;
+            line-height:.0001em;
+        }
+
+        .w4-button {
+            border: none;
+            display: inline-block;
+            padding: 8px 16px;
+            vertical-align: middle;
+            overflow: hidden;
+            text-decoration: none;
+            color: inherit;
+            background-color: inherit;
+            text-align: center;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+
         @media only screen and (max-width: 1460px) {
             /*
                 body {
                 background-color: lightblue;
             }
             */
-            w3-container, w3-dropdown-hover, w3-deep-purple, w3-button, w3-bar-item, w3-dropdown-hover, w3-dropdown-content, w3-bar-block, w3-border {
+             .w3-button {
+                border: none;
                 display: none;
+                padding: 8px 16px;
+                vertical-align: middle;
+                overflow: hidden;
+                text-decoration: none;
+                color: inherit;
+                background-color: inherit;
+                text-align: center;
+                cursor: pointer;
+                white-space: nowrap;
             }
-            .w3-btn, .w3-button {
+        }
+
+        @media only screen and (min-width: 1460px) {
+            /*
+                body {
+                background-color: lightblue;
+            }
+            */
+            .w4-button {
                 border: none;
                 display: none;
                 padding: 8px 16px;
@@ -331,6 +370,7 @@
 
 
     <center><h1>Educational Info</h1></center>
+    <!-- FOR BIGGER SCREENS: -->
     <div class="w3-container">
         <div class="w3-dropdown-hover " style="margin-left:2%; width:28%">
             <button class="w3-button w3-deep-purple">EECS 183 Projects Tutored (T) and/or Done-For-Grade (G)</button>
@@ -355,6 +395,41 @@
         </div>
         <div class="w3-dropdown-hover" style="margin-left:5%; width:28%">
             <button class="w3-button w3-deep-purple">Miscellaneous Information (School, Age, Major, Housing)</button>
+            <div class="w3-dropdown-content w3-bar-block w3-border">
+                <div class="w3-bar-item"><strong>School:</strong> University of Michigan - Ann Arbor (LSA)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&thinsp;</div>
+                <div class="w3-bar-item"><strong>Class Standing:</strong> Sophomore, Age: 19</div>
+                <div class="w3-bar-item"><strong>Intended Major:</strong> Data Science</div>
+                <div class="w3-bar-item"><strong>Current Residence of:</strong> North Quadrangle</div>
+            </div>
+        </div>
+    </div>
+    <!-- FOR SMALLER SCREENS: -->
+    <div class="w3-container">
+        <div class="w3-dropdown-hover " style="margin-left:2%; width:28%">
+            <button class="w4-button w3-deep-purple">EECS 183 Projects</button>
+            <div class="w3-dropdown-content w3-bar-block w3-border">
+                <div class="w3-bar-item"><strong>Cookies</strong> (EECS 183, G, T)</div>
+                <div class="w3-bar-item"><strong>Gregorian Calendar</strong> (EECS 183, G, T) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&thinsp;</div>
+                <div class="w3-bar-item"><strong>Ciphers</strong> (EECS 183 G, T)</div>
+                <div class="w3-bar-item"><strong>0HH1</strong> (EECS 183, T)</div>
+                <div class="w3-bar-item"><strong>Images</strong> (EECS 183, G, T)</div>
+                <div class="w3-bar-item"><strong>Battleship</strong> (EECS 183, T)</div>
+                <div class="w3-bar-item"><strong>*G = Done-For-Grade. T= Tutored</strong></div>
+            </div>
+        </div>
+        <div class="w3-dropdown-hover " style="margin-left:5%; width:28%">
+            <button class="w4-button w3-deep-purple">EECS 280 Projects</button>
+            <div class="w3-dropdown-content w3-bar-block w3-border">
+                <div class="w3-bar-item"><strong>Statistics</strong> (EECS 280, G)</div>
+                <div class="w3-bar-item"><strong>Computer Vision</strong> (EECS 280, G, T)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&thinsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&thinsp; </div>
+                <div class="w3-bar-item"><strong>Euchre (Favorite)</strong> (EECS 280, G)</div>
+                <div class="w3-bar-item"><strong>Calculator</strong> (EECS 280, G)</div>
+                <div class="w3-bar-item"><strong>Machine Learning</strong> (EECS 280, G)</div>
+                <div class="w3-bar-item"><strong>*G = Done-For-Grade. T= Tutored</strong></div>
+            </div>
+        </div>
+        <div class="w3-dropdown-hover" style="margin-left:5%; width:28%">
+            <button class="w4-button w3-deep-purple">Miscellaneous Information</button>
             <div class="w3-dropdown-content w3-bar-block w3-border">
                 <div class="w3-bar-item"><strong>School:</strong> University of Michigan - Ann Arbor (LSA)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&thinsp;</div>
                 <div class="w3-bar-item"><strong>Class Standing:</strong> Sophomore, Age: 19</div>
